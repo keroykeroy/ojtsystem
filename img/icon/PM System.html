@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost/pmsdepedv2/src/kra_tables.php -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PM System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/pmsdepedv2/img/icon/deped_icon.png">
+    <!-- Google Fonts
+        ============================================ -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"> -->
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/bootstrap.min.css">
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/font-awesome.min.css">
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/owl.carousel.css">
+    <link rel="stylesheet" href="./PM System_files/owl.theme.css">
+    <link rel="stylesheet" href="./PM System_files/owl.transitions.css">
+    <!-- animate CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/animate.css">
+    <!-- normalize CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/normalize.css">
+    <!-- meanmenu icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/meanmenu.min.css">
+    <!-- main CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/main.css">
+    <!-- educate icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/educate-custon-icon.css">
+    <!-- morrisjs CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/morris.css">
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/metisMenu.min.css">
+    <link rel="stylesheet" href="./PM System_files/metisMenu-vertical.css">
+    <!-- calendar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/fullcalendar.min.css">
+    <link rel="stylesheet" href="./PM System_files/fullcalendar.print.min.css">
+    <!-- style CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/style.css">
+    <!-- responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="./PM System_files/responsive.css">
+    <!-- modernizr JS
+        ============================================ -->
+    <script src="./PM System_files/modernizr-2.8.3.min.js.download"></script>
+
+    <!-- new script -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <script src="./PM System_files/bootstrap.min.js.download"></script>
+      
+  
+
+<style type="text/css">
+
+
+    .title{
+        font-size: 20.5px;
+        color: white;
+        font-family: Engravers MT;  
+        text-shadow: 2px 2px 2px black;
+        margin-top:18px;
+        margin-left: -50px; 
+    }
+
+    /*HR TOP*/
+    hr.style-four {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    /*PANEL MARGIN*/
+    .content-top{
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top:2%;
+    }
+
+    .table{
+        border: 2px solid darkgray;
+    }
+    thead{
+        border-bottom:5px solid darkgray;
+    }
+
+    table, th, td {
+        border: 1px solid darkgray;
+    }
+
+
+    .panel{
+        box-shadow: 0px 0px 4px 1px black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    }
+
+    [contenteditable=true]:empty:before{
+      content: attr(placeholder);
+      display: block; /* For Firefox */
+      font-style: italic;
+      color:gray;
+    }
+
+    td[contenteditable=true] {
+      width: 290px;
+      padding: 5px;
+    }
+
+    .greater{
+        color:red;
+        font-weight: bold;
+    }
+
+    .linkview, a:visited {
+      background-color:#228B22;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .linkview{
+        position: absolute;
+        left: 85%;
+    }
+
+    a:hover, a:active {
+      background-color:darkgreen;
+    }
+
+
+</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+
+
+<body>
+
+    
+  <!-- Start Left menu area -->
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="http://localhost/pmsdepedv2/src/index.php"><img class="main-logo" src="./PM System_files/deped_logo3.png" alt="logo_deped" width="145"></a>
+                <strong><a href="http://localhost/pmsdepedv2/src/index.php"><img src="./PM System_files/deped_logo.png" alt="logo_iconic" width="40"></a></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style="position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-light-1 mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li>
+                            <a class="" href="http://localhost/pmsdepedv2/src/index.php">
+                                   <span><img src="./PM System_files/home.png" width="40" class="mCS_img_loaded"></span>
+                                   <span class="mini-click-non">Home</span>
+                                </a>
+                        </li>
+    
+                        <li class="">
+                            <a class="has-arrow" href="http://localhost/pmsdepedv2/src/all-professors.html" aria-expanded="false">
+                                <span><img src="./PM System_files/profile.png" width="40" class="mCS_img_loaded"></span>
+                                <span class="mini-click-non">Profile</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="Professor Profile" href="http://localhost/pmsdepedv2/src/employee_profile.php"><span class="mini-sub-pro">Employee Profile</span></a></li>  
+                                <li><a title="All Professors" href="http://localhost/pmsdepedv2/src/view_rp.php"><span class="mini-sub-pro">Rating Period</span></a></li>
+                                <li><a title="All Professors" href="http://localhost/pmsdepedv2/src/view_rp_details.php"><span class="mini-sub-pro">RP Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="http://localhost/pmsdepedv2/src/all-students.html" aria-expanded="false">
+                                <span><img src="./PM System_files/requirement.png" width="40" class="mCS_img_loaded"></span> 
+                                <span class="mini-click-non">Requirements</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="All Students" href="http://localhost/pmsdepedv2/src/kra_add.php"><span class="mini-sub-pro">KRA Element</span></a></li>
+                                <li><a title="Add Students" href="http://localhost/pmsdepedv2/src/kra_tables.php"><span class="mini-sub-pro">KRA Tables</span></a></li>
+                                 <li><a title="Add Students" href="http://localhost/pmsdepedv2/src/kra_details.php"><span class="mini-sub-pro">KRA Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="http://localhost/pmsdepedv2/src/all-courses.html" aria-expanded="false">
+                                <span><img src="./PM System_files/requirement.png" width="40 " class="mCS_img_loaded"></span>
+                                <span class="mini-click-non">Departments</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="Departments List" href="http://localhost/pmsdepedv2/src/departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
+                                <li><a title="Add Departments" href="http://localhost/pmsdepedv2/src/add-department.html"><span class="mini-sub-pro">Add Departments</span></a></li>
+                                <li><a title="Edit Departments" href="http://localhost/pmsdepedv2/src/edit-department.html"><span class="mini-sub-pro">Edit Departments</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light-1 mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+        </nav>
+    </div>
+    
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <!-- <a href="index.html"><img class="main-logo" src="../img/logo/deped_logo.png" alt="" /></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                    <i class="educate-icon educate-nav"></i>
+                                                </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-0 col-md-0 col-sm-6 col-xs-12">
+                                        <div class="header-top-menu tabl-d-n">
+                                            <h1 class="title">PERFORMANCE MONITORING SYSTEM</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                
+                                                
+                                                <li class="nav-item">
+                                                    <a href="http://localhost/pmsdepedv2/src/kra_tables.php#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                            <img src="./PM System_files/admin_icon.png" alt="">
+                                                            <!-- <span class="admin-name" style="font-size: 15px; letter-spacing: 0.5px;"></span> -->
+                                                            <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+                                                        </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li><a href="http://localhost/pmsdepedv2/conn/destroyer.php"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        </li>
+                                                    </ul>
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown" style="display: block;">
+                                    <ul class="mobile-menu-nav">
+                                        <li><a data-toggle="collapse" data-target="#Charts" href="http://localhost/pmsdepedv2/src/index.php"><span><img src="./PM System_files/home.png" width="40"></span>Home</a>
+                                         </li>
+
+
+                                    <li>
+                                        <a class="has-arrow" href="http://localhost/pmsdepedv2/src/all-students.html" aria-expanded="false"><span><img src="./PM System_files/profile.png" width="40"></span> <span class="mini-click-non">Profile</span></a>
+                                        <ul class="submenu-angle" aria-expanded="false">
+                                            <li><a title="All Students" href="http://localhost/pmsdepedv2/src/employee_profile.php"><span class="mini-sub-pro">Employee Profile</span></a></li>
+                                            <li><a title="All Professors" href="http://localhost/pmsdepedv2/src/view_rp.php"><span class="mini-sub-pro">Rating Period</span></a></li>
+                                            <li><a title="All Professors" href="http://localhost/pmsdepedv2/src/view_rp_details.php"><span class="mini-sub-pro">RP Details</span></a></li>
+                                          </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="has-arrow" href="http://localhost/pmsdepedv2/src/all-students.html" aria-expanded="false"><span><img src="./PM System_files/requirement.png" width="40"></span> <span class="mini-click-non">Requirements</span></a>
+                                        <ul class="submenu-angle" aria-expanded="false">
+                                            <li><a title="All Students" href="http://localhost/pmsdepedv2/src/kra_add.php"><span class="mini-sub-pro">KRA Element</span></a></li>
+                                            <li><a title="All Professors" href="http://localhost/pmsdepedv2/src/kra_tables.php"><span class="mini-sub-pro">KRA Tables</span></a></li>
+                                            <li><a title="All Professors" href="http://localhost/pmsdepedv2/src/kra_details.php"><span class="mini-sub-pro">KRA Details</span></a></li>
+                                          </ul>
+                                    </li>
+
+
+                                        <li><a data-toggle="collapse" data-target="#demodepart" href="http://localhost/pmsdepedv2/src/kra_tables.php#"><span><img src="./PM System_files/requirement.png" width="40"></span>Departments</a>
+                                            <ul id="demodepart" class="collapse dropdown-header-top">
+                                                <li><a href="http://localhost/pmsdepedv2/src/departments.html">Departments List</a>
+                                                </li>
+                                                <li><a href="http://localhost/pmsdepedv2/src/add-department.html">Add Departments</a>
+                                                </li>
+                                                <li><a href="http://localhost/pmsdepedv2/src/edit-department.html">Edit Departments</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    <br><br>
+    <center>
+        <br><br>   
+        <h1 style="font-family: courier new; font-size: 40px; ">KRA TABLES</h1>
+        <hr class="style-four">
+    </center>
+
+
+    <div class="content-top">
+        <form action="http://localhost/pmsdepedv2/src/kra_tables.php" method="post">
+            <div class="row">
+                    <section class="panel" style="background-color: green;">
+                    <header class="panel-heading">
+                      
+                    </header>  
+                            <div class="panel-body">
+                                     <p><a class="linkview" href="http://localhost/pmsdepedv2/src/kra_details.php">VIEW KRA DETAILS</a></p>
+                                    <div align="left">
+                                        <p><b>KRA Target Percentage &nbsp;&nbsp; :</b> 
+
+                                            <span>
+                                               
+
+                                            </span>
+                                        </p>
+                                        <p><b>KRA Total Item Percentage :</b> 
+
+                                         
+                                        </p>
+                                    </div>
+                                <center>
+                                    <div class="table-responsive">
+
+                                    <!-- algo -->
+
+                                    
+
+
+                                        <table class="table">
+                                            <tbody><tr>
+                                                </tr></tbody><thead>
+                                                  <tr><th width="5%">KRA No</th>
+                                                  <th width="10%">KRA Item No</th>
+                                                  <th width="50%">Objective</th>
+                                                  <th width="5%">Quality</th>
+                                                  <th width="5%">Efficiency</th>
+                                                  <th width="5%">Timeliness</th>
+                                                  <th width="7.5%">Item Percentage</th>
+                                                  <th width="7.5%">Target Percentage</th>
+                                                  <th width="5%"></th>
+                                                </tr></thead>
+                                            
+
+                                            <tbody><tr>
+                                                </tr></tbody><tbody id="crud_table">               
+                                                    <tr><td contenteditable="false" class="kra_no">1</td>
+                                                    <td contenteditable="false" class="kra_item">2</td>
+                                                    <td contenteditable="true" class="kra_object"></td>
+                                                    <td contenteditable="true" class="kra_quot" id="editable_div" placeholder="0 or 1"></td>
+                                                    <td contenteditable="true" class="kra_eff" placeholder="0 or 1"></td>
+                                                    <td contenteditable="true" class="kra_time" placeholder="0 or 1"></td>
+                                                    <td contenteditable="true" class="kra_tblperc" placeholder="%"></td>
+                                                    <td contenteditable="true" class="kra_targetperc" placeholder="%"></td>
+                                                    <td></td>
+                                                </tr><tr id="row2"><td contenteditable="false" class="kra_no">1</td><td contenteditable="false" class="kra_no"> 4</td><td contenteditable="true" class="kra_object"></td><td contenteditable="true" class="kra_quot" placeholder="0 or 1"></td><td contenteditable="true" class="kra_eff" placeholder="0 or 1"></td><td contenteditable="true" class="kra_time" placeholder="0 or 1"></td><td contenteditable="true" class="kra_tblperc" placeholder="%"></td><td contenteditable="false" class="kra_targetperc" placeholder="%"></td><td><button type="button" name="remove" data-row="row2" class="btn btn-danger btn-xs remove">-</button></td></tr></tbody>
+                                            
+                                        </table>
+                                    
+                                        <div align="right">
+                                            <button type="button" name="add" id="add" class="btn btn-success btn-success-xs">+</button>
+                                        </div>
+                                        
+                                        <div align="center">
+                                            <button type="button" name="kra_save" id="save" class="btn btn-primary" style="width: 15%;">Save</button>
+                                        </div>
+
+                                        <br>
+                                        <div id="inserted_item_data"></div>
+                                    </div>
+                                </center>
+                            </div>
+                    </section>
+                </div>  
+        </form>
+    </div>
+
+
+        <!-- Single pro tab review Start-->
+
+        <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copy-right">
+                            <p>DepEd Performance Management System © 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- jquery
+        ============================================ -->
+    <script src="./PM System_files/jquery-1.12.4.min.js.download"></script>
+    <!-- bootstrap JS
+        ============================================ -->
+    <script src="./PM System_files/bootstrap.min.js(1).download"></script>
+    <!-- wow JS
+        ============================================ -->
+    <script src="./PM System_files/wow.min.js.download"></script>
+    <!-- price-slider JS
+        ============================================ -->
+    <script src="./PM System_files/jquery-price-slider.js.download"></script>
+    <!-- meanmenu JS
+        ============================================ -->
+    <script src="./PM System_files/jquery.meanmenu.js.download"></script>
+    <!-- owl.carousel JS
+        ============================================ -->
+    <script src="./PM System_files/owl.carousel.min.js.download"></script>
+    <!-- sticky JS
+        ============================================ -->
+    <script src="./PM System_files/jquery.sticky.js.download"></script>
+    <!-- scrollUp JS
+        ============================================ -->
+    <script src="./PM System_files/jquery.scrollUp.min.js.download"></script>
+    <!-- counterup JS
+        ============================================ -->
+    <script src="./PM System_files/jquery.counterup.min.js.download"></script>
+    <script src="./PM System_files/waypoints.min.js.download"></script>
+    <script src="./PM System_files/counterup-active.js.download"></script>
+    <!-- mCustomScrollbar JS
+        ============================================ -->
+    <script src="./PM System_files/jquery.mCustomScrollbar.concat.min.js.download"></script>
+    <script src="./PM System_files/mCustomScrollbar-active.js.download"></script>
+    <!-- metisMenu JS
+        ============================================ -->
+    <script src="./PM System_files/metisMenu.min.js.download"></script>
+    <script src="./PM System_files/metisMenu-active.js.download"></script>
+    <!-- morrisjs JS
+        ============================================ -->
+    <script src="./PM System_files/raphael-min.js.download"></script>
+    <script src="./PM System_files/morris.js.download"></script>
+    <script src="./PM System_files/morris-active.js.download"></script>
+    <!-- morrisjs JS
+        ============================================ -->
+    <script src="./PM System_files/jquery.sparkline.min.js.download"></script>
+    <script src="./PM System_files/jquery.charts-sparkline.js.download"></script>
+    <script src="./PM System_files/sparkline-active.js.download"></script>
+    <!-- calendar JS
+        ============================================ -->
+    <script src="./PM System_files/moment.min.js.download"></script>
+    <script src="./PM System_files/fullcalendar.min.js.download"></script>
+    <script src="./PM System_files/fullcalendar-active.js.download"></script>
+    <!-- plugins JS
+        ============================================ -->
+    <script src="./PM System_files/plugins.js.download"></script>
+    <!-- main JS
+        ============================================ -->
+    <script src="./PM System_files/main.js.download"></script><a id="scrollUp" href="http://localhost/pmsdepedv2/src/kra_tables.php#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+
+ 
+
+
+
+
+
+<script>
+$(document).ready(function(){
+ var count = 1;
+ $('#add').click(function(){           
+  count = count + 1;
+
+  kra_item_db = 2
+
+  var html_code = "<tr id='row"+count+"'>";
+   html_code += "<td contenteditable='false' class='kra_no'>1</td>";
+   html_code += "<td contenteditable='false' class='kra_no'> "+(kra_item_db + count)+"</td>";
+   html_code += "<td contenteditable='true' class='kra_object'></td>";
+   html_code += "<td contenteditable='true' class='kra_quot' placeholder='0 or 1'></td>";
+   html_code += "<td contenteditable='true' class='kra_eff' placeholder='0 or 1'></td>";
+   html_code += "<td contenteditable='true' class='kra_time' placeholder='0 or 1'></td>";
+   html_code += "<td contenteditable='true' class='kra_tblperc' placeholder='%'></td>";
+   html_code += "<td contenteditable='false' class='kra_targetperc' placeholder='%'></td>";
+   html_code += "<td><button type='button' name='remove' data-row='row"+count+"' class='btn btn-danger btn-xs remove'>-</button></td>";   
+   html_code += "</tr>";  
+   $('#crud_table').append(html_code);
+ });
+ 
+    $(document).on('click', '.remove', function(){
+    kra_item_count --;
+    var delete_row = $(this).data("row");
+    $('#' + delete_row).remove();
+    });
+ 
+ $('#save').click(function(){
+    var kra_no = [];
+    var kra_item = [];
+    var kra_object = [];
+    var kra_quot = [];
+    var kra_eff = [];
+    var kra_time = [];
+    var kra_tblperc = [];
+    var kra_targetperc = [];
+    $('.kra_no').each(function(){
+       kra_no.push($(this).text());
+    });
+    $('.kra_item').each(function(){
+       kra_item.push($(this).text());
+    });
+    $('.kra_object').each(function(){
+       kra_object.push($(this).text());
+    });
+    $('.kra_quot').each(function(){
+       kra_quot.push($(this).text());
+    });
+    $('.kra_eff').each(function(){
+       kra_eff.push($(this).text());
+    });
+    $('.kra_time').each(function(){
+       kra_time.push($(this).text());
+    });
+    $('.kra_tblperc').each(function(){
+       kra_tblperc.push($(this).text());
+    });
+    $('.kra_targetperc').each(function(){
+       kra_targetperc.push($(this).text());
+    });
+   $.ajax({
+   url:"insert.php",
+   method:"POST",
+   data:{kra_no:kra_no, kra_item:kra_item, kra_object:kra_object, kra_quot:kra_quot, kra_eff:kra_eff, kra_time:kra_time, kra_tblperc:kra_tblperc, kra_targetperc:kra_targetperc},
+   success:function(data){
+    if(alert(data)){}else{ window.location.reload(); }
+    
+    $("td[contentEditable='true']").text("");
+    for(var i=2; i<= count; i++)
+    {
+     $('tr#'+i+'').remove();
+    }
+    // fetch_item_data();
+   }
+  });
+ });
+ });
+
+
+// validation for numer only
+// $("#qet").on( "keydown",function(event) {
+//        if(event.which != 8 && event.which !=46 && isNaN(String.fromCharCode(event.which))){
+//            event.preventDefault(); 
+//        }
+// })
+
+
+// limit
+//  <div onkeypress="return (this.innerText.length <= 3)" contenteditable="true">    
+// </div>
+
+// validation limit to 2
+// var content_id = 'editable_div';  
+// max = 2;
+// //binding keyup/down events on the contenteditable div
+// $('#'+content_id).keyup(function(e){ check_charcount(content_id, max, e); });
+// $('#'+content_id).keydown(function(e){ check_charcount(content_id, max, e); });
+
+// function check_charcount(content_id, max, e)
+// {   
+//     if(e.which != 8 && $('#'+content_id).text().length > max)
+//     {
+//        // $('#'+content_id).text($('#'+content_id).text().substring(0, max));
+//        e.preventDefault();
+//     }
+// }
+
+
+</script>
+
+</body></html>
